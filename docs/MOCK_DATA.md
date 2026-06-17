@@ -22,8 +22,9 @@ Pretend it's real. Use it to make your demo land.
 | `mockdata/precedents.json` | Clause library | 25 | Clause explainer, market-standard checker, drafter |
 | `mockdata/deals.json` | Fictional market deal feed | 15 | Deal tracker, client intel, BD prompt |
 | `mockdata/news.json` | Fictional regulatory and market news | 15 | Knowledge alerts, "what changed", client briefing |
-| `mockdata/documents-index.json` | Catalogue of the documents in `documents/` | 18 | Document picker, search, metadata |
-| `mockdata/documents/*.md` | Substantive fake legal documents (NDA, employment, lease, supply, engagement letter, board resolutions, SPA extract, settlement, privacy notice, client instruction, DDQ response, CP checklist, SHA, SaaS subscription, facility agreement, DPA, consultancy agreement, heads of terms) | 18 | Redline summarisers, clause explainers, document Q&A, drafting assistants |
+| `mockdata/documents-index.json` | Catalogue of the documents in `documents/` | 21 | Document picker, search, metadata |
+| `mockdata/documents/*.md` | Substantive fake legal documents (NDA, employment, lease, supply, engagement letter, board resolutions, SPA extract, settlement, privacy notice, client instruction, DDQ response, CP checklist, SHA, SaaS subscription, facility agreement, DPA, consultancy agreement, heads of terms), plus **a meeting-call transcript** and **a two-version draft pair** for diffing | 21 | Redline summarisers, clause explainers, document Q&A, drafting assistants, meeting summarisers, diff/compare tools |
+| `mockdata/messy-export.csv` | A deliberately messy raw contacts/interactions export - inconsistent dates, duplicate rows, ragged status values, blank cells | 27 rows | Data clean-up, dashboards, dedupe, "tidy this export" tools |
 
 Everything cross-references by ID. A matter has a `client` (clients.json), `partner` (people.json), `feeEarners` (people.json). An email has a `matter` (matters.json) and `from`/`to` (people.json or external addresses). A document has a `matter` and `client`. You can build joins between any of these.
 
@@ -39,7 +40,7 @@ The simplest pattern, and the one we recommend, is:
 
 Claude will read the JSON file, embed the data inside your `index.html` as a `const` (or in a `<script type="application/json">` block), and your code reads from that variable. No fetch, no server, works from `file://`.
 
-This is the **default approach** because trainees opening `index.html` from disk will hit CORS errors with `fetch()`.
+This is the **default approach** because opening `index.html` from disk hits CORS errors with `fetch()`.
 
 ```html
 <script>
@@ -215,6 +216,9 @@ If you're stuck, here's what the data supports out of the box:
 | **Knowledge alert / "what changed"** | `news.json` (each item has `relevant_to_clients` and `relevant_to_matters`) |
 | **Conflict checker** | `clients.json` + `matters.json` (filter by client name match) |
 | **Witness / chronology builder** | `emails.json` filtered by matter + chronological order |
+| **Meeting summariser / action + decision extractor** | `documents/project-lighthouse-call-transcript.md` (timestamps, decisions and actions embedded) |
+| **Plain-English diff / version compare** | `documents/services-agreement-v1.md` vs `services-agreement-v2.md` (same agreement, clear changes) |
+| **Messy-data clean-up / dashboard / dedupe** | `messy-export.csv` (inconsistent dates, duplicate rows, blank cells, ragged status values) |
 
 ---
 

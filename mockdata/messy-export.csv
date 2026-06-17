@@ -1,0 +1,28 @@
+Name,Company,Email,Phone,Last Contacted,Status,Owner,Notes
+Diane Okafor,Northwind Industries Ltd,d.okafor@northwind.example,0161 000 2201,2026-05-14,Active,George Pemberton,Group FD on Project Lighthouse
+Okafor, Diane,Northwind,D.OKAFOR@northwind.example,0161 000 2201,14/05/2026,active,George Pemberton,"duplicate? FD, deal contact"
+Raymond Tse,Northwind Industries,raymond.tse@northwind.example ,,14 May 2026,Active,Sarah Lin,Corp dev
+amelia hart,Helix Therapeutics plc,a.hart@helixthera.example,+44 161 000 2210,2026-05-02,Warm,Catherine Whitfield,GC - Series C
+Amelia Hart,Helix Therapeutics,a.hart@helixthera.example,+44 161 000 2210,02/05/2026,warm,Catherine Whitfield,
+Jonathan  Brooks,Cobalt Energy Holdings,j.brooks@cobalt.example,(0161) 000 2215,2025-12-18,Cold,Rohan Patel,refi closed - keep warm
+Priya Nair,Westgate Property Partners LLP,,07700 900221,,Prospect,Bea Mortimer,met at property forum
+S. Whitcombe,Tessera Capital Partners,s.whitcombe@tessera.example,0161-000-2230,2026-05-13,ACTIVE,Catherine Whitfield,"PE sponsor, multiple deals"
+Sam Whitcombe,Tessera Capital,s.whitcombe@tessera.example,0161 000 2230,13 May 2026,Active,Catherine Whitfield,dupe of above
+Marcus Bell,Brindle Foods plc,m.bell@brindlefoods.example,0161 000 2240,2026-04-29,Warm,Aaron Drummond,procurement dispute
+Helen Voss,Brindle Foods,helen.voss@brindlefoods.example,,Apr 2026,warm,Aaron Drummond,GC
+Tariq Aziz,Lattice Networks Ltd,t.aziz@lattice.example,+44 7700 900244,2026-05-09,Active,Hannah Eisler,DPA renegotiation
+tariq aziz,Lattice Networks,T.Aziz@LATTICE.example,07700900244,09/05/2026,ACTIVE,Hannah Eisler,
+Nadia Forsythe,Quill Media Group Ltd,n.forsythe@quillmedia.example,0161 000 2250,2026-03-30,Do not contact,Rohan Patel,"restructure, sensitive"
+Greg Mallory,Pemberton Construction Ltd,g.mallory@pembertoncon.example,0161 000 2255,2026-04-17,DNC,Daniel Asare,adjudication concluded
+Eleanor Shaw,Albion Retail Holdings plc,e.shaw@albionretail.example,0161 000 2260,2026-02-19,Cold,Aaron Drummond,CFO exit settled
+,Albion Retail Holdings plc,procurement@albionretail.example,,,Prospect,,no named contact yet
+Owen Pryce,Marston Pharmaceuticals Ltd,o.pryce@marstonpharma.example,+44 161 000 2270,2026-04-22,Warm,Catherine Whitfield,IP licence
+Fenella Ross,Saxon & Reed Insurance plc,f.ross@saxonreed.example,0161 000 2275,2026-04-10,Active,Bea Mortimer,"s166 review, regulated"
+Hugh Lin,Kingfisher Logistics Ltd,h.lin@kingfisherlog.example,,28/03/2026,lapsed,Rohan Patel,depot closures
+Carmen Diaz,Mercer Coaching Group,carmen@mercercoaching.example,07700 900280,2026-03-10,Warm,Bea Mortimer,seed round
+Bramble & Finch LLP,Bramble & Finch LLP,info@brambdlefinch.example,0161 000 2290,2026-01-15,Prospect,Catherine Whitfield,referral source
+Diane Okafor,Northwind Industries Ltd,d.okafor@northwind.example,0161 000 2201,2026-05-14,Active,George Pemberton,DUPLICATE row
+Felix Ng,Verdant DataOps Ltd,f.ng@verdantdataops.example,,2026-04-30,Active,George Pemberton,target co - Project Birch
+Imani Cole,Larchwood Cold Stores,i.cole@larchwood.example,0161 000 2299,2026-05-13,Active,Sarah Lin,"supply consent needed, urgent"
+Rev. Paul Eddings,,p.eddings@oldmill.example,,,Cold,,met once - unclear fit
+Yuki Tanaka,Helix Therapeutics plc,y.tanaka@helixthera.example,+44 161 000 2212,May 2026,Warm,Catherine Whitfield,CFO
