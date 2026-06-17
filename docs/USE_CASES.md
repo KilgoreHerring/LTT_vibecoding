@@ -64,6 +64,25 @@ Tools that make the knowledge around you easier to find and use.
 
 ---
 
+## Proven Idea Seeds
+
+These are patterns that have actually been built and have worked in real professional settings. They are starting points, not specifications: deliberately a sentence or two each, so you shape them into your own thing rather than copy a blueprint. Each one has a clear core you can get working first, then obvious things to layer on, which is exactly the shape that suits a two-day build.
+
+- **Document risk-flagger** - drop in a contract, policy, or report and get back the points that need attention, each with a short "why it matters". *Start with:* paste text in, get a flagged list out. *Then add:* categories, severity, filtering, export.
+- **Plain-English diff** - paste two versions of a document and get a readable summary of what actually changed and what it means, instead of a wall of tracked changes. *Start with:* two text boxes and a "what changed" summary.
+- **Ask-your-documents** - point it at a pile of your own files and ask plain-English questions, with answers grounded in those files and a pointer to the source. *Start with:* load a few documents, answer one question well.
+- **Messy-data dashboard** - take a clunky spreadsheet or export and turn it into a clean, filterable view with a couple of charts. *Start with:* load the data, render one good table.
+- **Compare-the-options harness** - run the same input through several prompts, models, or approaches and lay the results side by side so you can judge which is best. *Start with:* one input, two outputs, shown together.
+- **Bulk transformer** - point it at a folder or list and apply one consistent rule: rename, reformat, restructure, or tag, with a preview before it commits. *Start with:* the rule on one batch, with a dry-run preview.
+- **Brief from the noise** - paste a stack of articles or updates and get a short brief: what's new, what matters, what's worth reading in full. *Start with:* several items in, one tight summary out.
+- **Triage / daily brief** - take a pile of incoming items (emails, requests, tasks) and sort them into urgent, ignore, and do-first, with a one-line reason each. *Start with:* a list in, a prioritised list out.
+- **Jargon explainer and standard-checker** - paste a term or a clause and get it explained plainly, plus a read on whether it looks standard or like an outlier worth questioning. *Start with:* explain one input clearly.
+- **Relationship tracker and prep brief** - log who you have spoken to and when, surface the ones going cold, and generate a short prep brief before a meeting. *Start with:* a simple log and a "who haven't I spoken to lately" view.
+
+Pick one, swap the domain for yours, and make the core work before you reach for the extras.
+
+---
+
 ## If You're Still Stuck
 
 Ask yourself: *"What's the most annoying thing I do repeatedly that a computer should be doing?"*
