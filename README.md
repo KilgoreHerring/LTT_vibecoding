@@ -1,80 +1,65 @@
-# Vibe Coding Hackathon - Facilitator Kit
+# Vibe Coding Hackathon - Build Kit
 
-A 90-minute workshop where people build real working apps using Claude Code - no programming experience needed. This repo is everything you need to run it, for any organisation and any domain.
+A starting scaffold for building a real, working app over a day or two using an AI coding agent. You don't need to be a developer. You describe what you want, the agent writes the code, you steer.
 
-Each group copies this folder, opens it in Claude Code, and `CLAUDE.md` loads automatically as the session instructions. Designed to be run across many groups in parallel, with one facilitator per group acting as a guide rather than a builder.
+This repo is an **optional kickstart**. Clone it, open it in your agent, and you get a design system, sample data, a starter template, and a few commands to keep a multi-session build organised. If you'd rather start from a blank folder, that's fine too.
+
+Built for **Claude Code** or **ChatGPT Codex**. It won't add much in Replit or Google AI Studio - it relies on an agent that reads the repo's files (`CLAUDE.md` for Claude Code, `AGENTS.md` for Codex) and can run commands.
 
 ---
 
-## Folder structure
+## How the event works
+
+| When | What's happening |
+|---|---|
+| Day 1, morning | Everyone together: a couple of talks, demos, and mentors on hand. Pick an idea. |
+| Day 1 to Day 2 | Build. Roughly 24 hours, self-serve, at your own pace. Mentors around for advice. |
+| Day 2, afternoon | Present back: what you built, a live demo, and what it would take to ship. |
+
+You have real time and an agent doing the typing, so aim higher than one tiny feature. Scope a core you can get working, then build out.
+
+---
+
+## Getting started
+
+1. Install [Claude Code](https://claude.com/claude-code), or use ChatGPT Codex.
+2. Clone or download this repo and open the folder in your agent. `CLAUDE.md` (or `AGENTS.md`) loads as the standing instructions.
+3. Read [docs/SCENE_SETTER.md](docs/SCENE_SETTER.md) and [docs/BUILDING_GUIDE.md](docs/BUILDING_GUIDE.md) if you're new to this.
+4. Work out what you're building ([docs/DISCOVERY.md](docs/DISCOVERY.md), [docs/DESIGN_BRIEF.md](docs/DESIGN_BRIEF.md)), then run `/kickoff` to turn it into a plan.
+5. If your build needs API keys, copy `.env.example` to `.env` and add them. Never commit `.env`.
+6. Build. Run `/handover` before you stop, `/pickup` when you come back.
+
+---
+
+## What's in here
 
 ```
 /
-├── CLAUDE.md              Session instructions - loaded automatically by Claude Code
+├── CLAUDE.md              Standing instructions - loaded by Claude Code
+├── AGENTS.md              The same instructions for ChatGPT Codex
 ├── starter.html           Blank HTML template with the Base Design System pre-loaded
 ├── docs-viewer.html       Open locally to browse the docs in a browser
 ├── .env.example           Template for API keys - copy to .env (gitignored) and fill in
-├── .claude/commands/      Slash commands that drive the session
-├── docs/                  Facilitator reference - read before, don't edit during
-├── mockdata/              Sample data for a fictional firm to build against
-└── example/               A complete example session, built during a test run
+├── .claude/commands/      Slash commands that drive the build
+├── docs/                  Reference: scene-setter, discovery, design brief, building guide, design system, shipping
+└── mockdata/              Sample data for a fictional firm to build against
 ```
 
-The root folder is the **session template** - copy it fresh for each group. The `example/` folder shows what a finished session looks like.
-
----
-
-## What's in docs/
+### docs/
 
 | File | Purpose |
 |---|---|
-| `SCENE_SETTER.md` | Pre-session briefing for participants |
-| `DISCOVERY.md` | Discovery questions to work through as a group |
-| `DESIGN_BRIEF.md` | Design brief template to complete before building |
-| `USE_CASES.md` | App ideas to spark something |
-| `BUILDING_GUIDE.md` | Tips for prompting Claude during the build |
+| `SCENE_SETTER.md` | What this is and how the two days work |
+| `DISCOVERY.md` | Questions to work out what you're building |
+| `DESIGN_BRIEF.md` | Turn the idea into a plan before building |
+| `BUILDING_GUIDE.md` | How to work with an AI coding agent (start here if it's your first time) |
+| `USE_CASES.md` | Ideas to spark something |
 | `DESIGN.md` | The Base Design System: colours, typography, CSS starter block, 6 style presets |
 | `MOCK_DATA.md` | What's in `mockdata/` and how to use it |
-| `SHIPPING_CHECKLIST.md` | Post-build reflection on what it would take to ship |
+| `SHIPPING_CHECKLIST.md` | Demo-prep reflection on what it would take to ship |
 | `SHIPPING.md` | A generic prototype-to-production reference |
-| `FACILITATOR_GUIDE.md` | Notes for the people running each table |
-| `DAY_PLAN.md` | One-page participant handout for the day |
-| `RUN_SHEET.md` | Organiser choreography for running many groups in parallel |
-| `OPENING_DECK.html` | An editable opening deck to set the room before groups split out |
-
----
-
-## How to run a session
-
-**Before the day:**
-1. Copy this folder - one copy per group.
-2. Install [Claude Code](https://claude.com/claude-code) on each machine.
-3. Open the folder in Claude Code - `CLAUDE.md` loads automatically.
-4. Read [docs/FACILITATOR_GUIDE.md](docs/FACILITATOR_GUIDE.md) and [docs/RUN_SHEET.md](docs/RUN_SHEET.md).
-5. If you're using API keys for the day, copy `.env.example` to `.env` and fill them in (never commit `.env`).
-6. If running a scenario-based session, drop source documents into a `materials/` folder.
-7. Fill in the `[bracketed placeholders]` in `docs/OPENING_DECK.html` and `docs/DAY_PLAN.md` with your hackathon name, date and venue.
-
-**On the day**, run the session in five phases:
-
-| Time | Phase |
-|---|---|
-| 0-15 min | Discovery - work through [docs/DISCOVERY.md](docs/DISCOVERY.md) |
-| 15-20 min | Design brief - complete [docs/DESIGN_BRIEF.md](docs/DESIGN_BRIEF.md), then run `/kickoff` |
-| 20-55 min | Build - iterate with Claude |
-| 55-70 min | Polish - tighten the UI, no new features |
-| 70-75 min | Run `/onepager` (fast) - or `/present` for a full slide deck if time allows - and open it in the browser |
-| 75-90 min | Present - 5 minutes per group |
-
-**If a group arrives with a clear idea**, skip Discovery and Design Brief. Describe the idea to Claude and run `/kickoff` straight away.
-
----
-
-## Build stack
-
-The default is **no build and no install**: a single `index.html` opened directly in the browser. It is the fastest path for a 90-minute session driven by non-coders, and the right choice for almost every group.
-
-Frameworks (Next.js, Vite, React, a Python backend) are allowed when a group wants one and the facilitator is comfortable with the tooling - just remember that setup time eats into the 90 minutes. See the "Build Stack" section of `CLAUDE.md` for the full guidance.
+| `DAY_PLAN.md` | One-page participant handout for the event |
+| `OPENING_DECK.html` | An editable opening deck for the day-1 session |
 
 ---
 
@@ -82,29 +67,31 @@ Frameworks (Next.js, Vite, React, a Python backend) are allowed when a group wan
 
 | Command | What it does |
 |---|---|
-| `/kickoff` | Creates `PLAN.md` from the design brief - starts the build |
-| `/handover` | Saves session state to `HANDOVER.md` before closing the chat |
-| `/pickup` | Restores full context at the start of a new chat |
-| `/onepager` | Generates `onepager.html` - a fast one-page summary (the quick demo option) |
-| `/present` | Generates `presentation.html` - a fuller slide deck if you have time |
-| `/styles` | Lists 6 visual style presets (`/style-chelsea`, `/style-midnight`, ...) to reskin a group's app |
+| `/kickoff` | Turns your idea into a phased `PLAN.md` and starts the build |
+| `/handover` | Saves session state to `HANDOVER.md` before you stop |
+| `/pickup` | Reloads full context when you come back or start a new chat |
+| `/onepager` | Generates `onepager.html` - a one-page summary |
+| `/present` | Generates `presentation.html` - a slide deck for presenting back |
+| `/styles` | Lists 6 visual style presets (`/style-chelsea`, `/style-midnight`, ...) to reskin your app |
+
+`/handover` and `/pickup` matter most over a two-day build: they carry context across sessions (and overnight) so the agent always knows where you left off.
+
+---
+
+## Build stack
+
+Use whatever fits the idea. A real framework (Next.js, Vite + React) is a fine default over a day or two and gives you a clear path to deploying. No-build single-file HTML is the lightweight option and the fastest way to see something on screen. See the "Build Stack" section of `CLAUDE.md`.
 
 ---
 
 ## Design system
 
-All apps use the Base Design System defined in [docs/DESIGN.md](docs/DESIGN.md). When prompting Claude, include:
-
-> "Use the Base Design System from docs/DESIGN.md"
-
-Or copy `starter.html` as your starting point - it has the full CSS already loaded.
-
-Want a group's app to stand out? Six **style presets** can reskin it (visuals only) - run `/styles` for the menu, or see the presets section in [docs/DESIGN.md](docs/DESIGN.md). Best applied during polish, near the end.
+All apps use the Base Design System in [docs/DESIGN.md](docs/DESIGN.md). When prompting the agent, say "Use the Base Design System from docs/DESIGN.md", or start from `starter.html`. Want a distinct look? Run `/styles` for six presets, best applied during polish.
 
 ---
 
 ## Mock data and API keys
 
-`mockdata/` contains invented data for a fictional professional-services firm (people, clients, matters, emails, a calendar, documents, news, a clause library). It lets groups build realistic demos without touching anything confidential. See [docs/MOCK_DATA.md](docs/MOCK_DATA.md). Bring your own domain data via `materials/` if you prefer.
+`mockdata/` holds invented data for a fictional professional-services firm (people, clients, matters, emails, a calendar, documents, news, a clause library), so you can build a realistic demo without touching anything confidential. Bring your own domain data via a `materials/` folder if you prefer.
 
-The kit ships with **no API keys**. If a build needs a model or API, copy `.env.example` to `.env` and add the keys the organisers provide for the day. `.env` is gitignored - never commit it or paste keys into chat.
+The kit ships with **no API keys**. If a build needs a model or API, copy `.env.example` to `.env` and add your own. `.env` is gitignored - never commit it or paste keys into chat.

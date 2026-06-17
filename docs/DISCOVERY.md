@@ -1,8 +1,8 @@
 ﻿# Discovery Questions
 
-Work through these as a group before you ask Claude to build anything. The better your answers, the better your app. Your facilitator will guide you.
+Work through these before you ask the AI coding agent to build anything. The better your answers, the better your app.
 
-Budget 15 minutes. If you're still debating after 15 minutes, pick something and move.
+Don't agonise over this. Spend a focused chunk of time on it, but if you're still going back and forth, pick something and move - you can refine as you build.
 
 ---
 
@@ -44,8 +44,8 @@ Budget 15 minutes. If you're still debating after 15 minutes, pick something and
 
 ## 5. The Demo
 
-- What does success look like at the end of 90 minutes?
-- What will you show the other groups?
+- What does success look like when you present on day 2?
+- What will you show the room?
 - What's the one thing you want them to walk away remembering?
 
 ---

@@ -2,7 +2,7 @@
 
 You're building a real, working app over the next day or so, using an AI coding agent. You don't need to be a developer. You describe what you want, the agent writes the code, you steer. This repo is an optional kickstart: a starting scaffold, a design system, sample data, and a few commands to keep you organised. Use it, or strip it out and go your own way.
 
-This file is your agent's standing instructions. It loads automatically in Claude Code. (If you're using ChatGPT Codex, the same content is in `AGENTS.md`.)
+This file is your agent's standing instructions. This is the ChatGPT Codex copy. (If you are using Claude Code, the same content is in `CLAUDE.md`.)
 
 ---
 

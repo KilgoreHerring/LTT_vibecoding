@@ -4,7 +4,9 @@ Stuck on what to build? Here are broad themes and ideas that apply to almost any
 
 The best apps solve a real, specific problem you've actually experienced, not a theoretical one.
 
-This kit ships with a sample professional-services dataset in `mockdata/` (a fictional firm) that your group can build against if you don't have data of your own to hand. You can equally bring your own domain and make something for the work you actually do.
+With around 24 hours to build, you can aim for a real multi-feature tool, not just one tiny thing. The trick is to pick an idea with a clear core you can get working first, then layers you can add on top once it holds together.
+
+This kit ships with a sample professional-services dataset in `mockdata/` (a fictional firm) that you can build against if you don't have data of your own to hand. You can equally bring your own domain and make something for the work you actually do.
 
 ---
 

@@ -29,17 +29,17 @@ Write the complete file to `PLAN.md`:
 ---
 
 ## Phase 1: Core MVP
-*Goal: A working version of the must-have features - demoable, even if rough*
-*Target: Complete by ~50 minutes in*
+*Goal: A working end-to-end version of the must-have features - demoable, even if rough*
+*Target: Working by the end of day 1*
 
 - [ ] [task]
 - [ ] [task]
 - [ ] [task]
 - [ ] [task]
 
-## Phase 2: Polish & Nice-to-Haves
-*Goal: Improve the UI, add secondary features, handle edge cases*
-*Target: Complete by ~70 minutes in*
+## Phase 2: Build out & polish
+*Goal: Add secondary features, handle edge cases, improve the UI*
+*Target: Day 2 morning*
 
 - [ ] [task]
 - [ ] [task]
@@ -47,11 +47,11 @@ Write the complete file to `PLAN.md`:
 
 ## Phase 3: Demo Prep
 *Goal: Ready to present to the room*
-*Target: Complete by 75 minutes in*
+*Target: Before the day 2 presentations*
 
 - [ ] Run through the full demo scenario end-to-end
 - [ ] Fix any rough edges found during the run-through
-- [ ] Run /onepager to generate the one-page summary (fast - the default)  -  or /present for a full slide deck if time allows
+- [ ] Run /onepager to generate the one-page summary (fast - the default) or /present for a full slide deck
 - [ ] Open the generated HTML and check it looks right
 
 ---
@@ -87,4 +87,4 @@ After writing the files, output a short message to the group:
 - Confirm PLAN.md and DECISIONS.md have been created
 - State the current phase and what the first task is
 - Suggest the opening build prompt they should give Claude: something specific enough to start immediately
-- Remind them of the commands they'll need: `/handover` to close a chat cleanly, `/pickup` to resume in a new one, and at demo time `/onepager` for a fast one-page summary (the default) or `/present` for a fuller slide deck if time allows
+- Remind them of the commands they'll need: `/handover` to close a session cleanly and `/pickup` to resume in a fresh one, so they can stop and start across the two days without losing context, and at demo time `/onepager` for a fast one-page summary (the default) or `/present` for a fuller slide deck

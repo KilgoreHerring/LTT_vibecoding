@@ -1,6 +1,6 @@
 ﻿# Design Brief
 
-Once you've completed the discovery questions, spend 5-10 minutes turning your answers into a design brief. It's your group's shared contract before building starts: it stops scope creep, keeps everyone aligned, and makes your prompts to Claude much better.
+Once you've completed the discovery questions, turn your answers into a design brief. It's your contract with yourself before building starts: it stops scope creep, keeps you focused, and makes your prompts to the AI coding agent much better.
 
 Work through each step in order. Then run `/kickoff` to create your build plan.
 
@@ -46,7 +46,7 @@ Keep to 3 maximum. These become your build checklist.
 
 ## Step 4 - Map Your Screens
 
-List every screen or view in your app before Claude builds anything. If you have more than 4 screens, cut some - you have 90 minutes.
+List every screen or view in your app before the agent builds anything. Map the screens your MVP needs first. You can add more views in later phases once the core works.
 
 | Screen | What the user does here |
 |---|---|
@@ -58,9 +58,11 @@ List every screen or view in your app before Claude builds anything. If you have
 
 ## Step 5 - Set Your MVP Scope
 
-Be ruthless. Anything in "Nice to have" only gets built if the must-haves are done and working.
+Be ruthless about the first version. Your MVP is the smallest thing that works end to end - that's what you build and get running first. It's good discipline even with a long build ahead of you, because a working core is the thing everything else hangs off.
 
-| Must have (build today) | Nice to have (if time allows) | Out of scope |
+You have around 24 hours, so the MVP can be substantial and you'll plan to build out in phases once it's solid. Put the first wave of additions in "Nice to have" - they get built after the must-haves are done and working.
+
+| Must have (MVP, build first) | Nice to have (build out after) | Out of scope |
 |---|---|---|
 | | | |
 
@@ -68,13 +70,13 @@ Be ruthless. Anything in "Nice to have" only gets built if the must-haves are do
 
 ## Step 6 - Make Your Key Technical Decisions
 
-Claude will suggest options, but your group should agree on these before the build starts.
+The agent will suggest options, but decide these before the build starts.
 
-- Language / framework: what will the app be built in? The default is no-build HTML/CSS/JS that runs straight from `index.html` with nothing to install. A framework (Next.js, Vite, Python) is fine if your group wants one and has the time, but it's not required. Claude will suggest an option based on what you're building.
+- Language / framework: what will the app be built in? Over a build of this length, a framework like Next.js or Vite is a sensible default - it gives you room to grow as you add features. No-build HTML/CSS/JS that runs straight from `index.html` with nothing to install is the lightweight option if you want to keep things simple. The agent will suggest an option based on what you're building.
 - Data: does the app need to save anything? If so, how? Browser local storage works for simple apps; a JSON file or lightweight database for anything more.
 - Style: you don't need to decide this - every app uses the Base Design System by default. If you want a different look, apply one of the six style presets later in polish (run `/styles`). Don't design a bespoke style from scratch.
-- Hosting: where will it run for the demo? Just locally in the browser is fine for today.
+- Hosting: where will it run for the demo? Running it locally in the browser is fine for the presentation.
 
 ---
 
-Once you've worked through these steps, run `/kickoff` in the chat and Claude will build your `PLAN.md`.
+Once you've worked through these steps, run `/kickoff` in the chat and the agent will build your `PLAN.md`.

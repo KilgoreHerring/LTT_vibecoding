@@ -1,6 +1,6 @@
 # Mock Data
 
-You're building your hackathon app in 90 minutes. You can't talk to Outlook, the firm document management system, the practice management database, or any real client information. So we've baked you a fictional firm to play with.
+You're building your hackathon app over a day or two. You can't talk to Outlook, the firm document management system, the practice management database, or any real client information. So we've baked you a fictional firm to play with.
 
 Pretend it's real. Use it to make your demo land.
 
@@ -52,7 +52,7 @@ This is the **default approach** because trainees opening `index.html` from disk
 
 ### Alternative: fetch with a local server
 
-If your group is comfortable running a local server, `fetch()` works fine:
+If you're comfortable running a local server, `fetch()` works fine:
 
 ```html
 <script>
@@ -84,7 +84,7 @@ Then open `http://localhost:8080/index.html`. Tell Claude "use a local server, f
 
 ## Schemas (quick)
 
-Below is the shape of each file. Claude can read the full files when you ask - this is just an at-a-glance reference for facilitators and stuck groups.
+Below is the shape of each file. Claude can read the full files when you ask - this is just an at-a-glance reference for when you're stuck.
 
 ### people.json
 ```json
@@ -198,7 +198,7 @@ Below is the shape of each file. Claude can read the full files when you ask - t
 
 ## Use-case mapping
 
-If your group is stuck, here's what the data supports out of the box:
+If you're stuck, here's what the data supports out of the box:
 
 | Idea | What to read |
 |---|---|
@@ -223,8 +223,8 @@ If your group is stuck, here's what the data supports out of the box:
 - **Anonymity**: every name, email, phone number and registered number is invented. Never replace mock data with real client information for a demo.
 - **Anchor date**: assume "today" is **2026-05-15**. Tell Claude this so dates feel current.
 - **Don't hallucinate**: if you need data that isn't in mockdata, ask Claude to add it to the file as a small extension - don't invent it inline in your code.
-- **Resist the urge to add a backend**: the goal is a 90-minute single-file demo. Keep state in memory or `localStorage`. No databases.
-- **Don't ship code with real API keys**: if your group ends up calling Claude or another model from the browser, mock the response or use a key your facilitator provides for the day.
+- **Resist the urge to add a backend**: keep it simple. In-memory state or `localStorage` covers most demos; only add a backend if your idea genuinely needs one.
+- **Don't ship code with real API keys**: if you call a model from the browser, mock the response or use your own key (copy `.env.example` to `.env`).
 
 ---
 
